@@ -3,56 +3,64 @@
     "count": 4,
     "description": "Short Product Description1",
     "id": "7567ec4b-b10c-48c5-9345-fc73c48a80aa",
-    "price": 2.4,
-    "title": "ProductOne"
+    "price": 150,
+    "title": "ProductOne",
+    "img": "../assets/images/1.jpg"
   },
   {
     "count": 6,
     "description": "Short Product Description3",
     "id": "7567ec4b-b10c-48c5-9345-fc73c48a80a0",
-    "price": 10,
-    "title": "ProductNew"
+    "price": 190,
+    "title": "ProductNew",
+    "img": "../assets/images/2.jpg"
   },
   {
     "count": 7,
     "description": "Short Product Description2",
     "id": "7567ec4b-b10c-48c5-9345-fc73c48a80a2",
-    "price": 23,
-    "title": "ProductTop"
+    "price": 230,
+    "title": "ProductTop",
+    "img": "../assets/images/3.jpg"
   },
   {
     "count": 12,
     "description": "Short Product Description7",
     "id": "7567ec4b-b10c-48c5-9345-fc73c48a80a1",
-    "price": 15,
-    "title": "ProductTitle"
+    "price": 315,
+    "title": "ProductTitle",
+    "img": "../assets/images/4.jpg"
   },
   {
     "count": 7,
     "description": "Short Product Description2",
     "id": "7567ec4b-b10c-48c5-9345-fc73c48a80a3",
-    "price": 23,
-    "title": "Product"
+    "price": 263,
+    "title": "Product",
+    "img": "../assets/images/5.jpg"
   },
   {
     "count": 8,
     "description": "Short Product Description4",
     "id": "7567ec4b-b10c-48c5-9345-fc73348a80a1",
-    "price": 15,
-    "title": "ProductTest"
+    "price": 415,
+    "title": "ProductTest",
+    "img": "../assets/images/6.jpg"
   },
   {
     "count": 2,
     "description": "Short Product Descriptio1",
     "id": "7567ec4b-b10c-48c5-9445-fc73c48a80a2",
-    "price": 23,
-    "title": "Product2"
+    "price": 823,
+    "title": "Product2",
+    "img": "../assets/images/7.jpg"
   },
   {
     "count": 3,
     "description": "Short Product Description7",
     "id": "7567ec4b-b10c-45c5-9345-fc73c48a80a1",
-    "price": 15,
-    "title": "ProductName"
+    "price": 335,
+    "title": "ProductName",
+    "img": "../assets/images/8.jpg"
   }
 ]

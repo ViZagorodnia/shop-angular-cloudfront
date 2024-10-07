@@ -1,5 +1,12 @@
 # Shop Angular Cloudfront
 
+## Task 2
+
+#### Manual Deployment
+
+S3 bucket has been created and configured manually: http://s3awsshopbacket89.s3-website-us-east-1.amazonaws.com/
+CloudFront has been created and configured manually: https://d32xr5u3etgp4q.cloudfront.net
+
 Angular version: ~17.
 
 Repo maintainers:
