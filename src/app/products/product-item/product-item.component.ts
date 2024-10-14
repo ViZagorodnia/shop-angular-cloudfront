@@ -60,15 +60,15 @@ export class ProductItemComponent {
   countInCart = computed(() => {
     const cart = this.#cartService.cart();
 
-    if (!(this.id in cart)) {
+    if (!(this.productId in cart)) {
       return 0;
     }
 
-    return cart[this.id];
+    return cart[this.productId];
   });
 
-  get id(): string {
-    return this.product().id;
+  get productId(): string {
+    return this.product().productId;
   }
 
   constructor() {
@@ -76,11 +76,11 @@ export class ProductItemComponent {
   }
 
   add(): void {
-    this.#cartService.addItem(this.id);
+    this.#cartService.addItem(this.productId);
   }
 
   remove(): void {
-    this.#cartService.removeItem(this.id);
+    this.#cartService.removeItem(this.productId);
   }
 
   /** Move focus to a corresponding control when controls switch */
