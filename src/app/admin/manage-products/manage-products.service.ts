@@ -17,8 +17,7 @@ export class ManageProductsService extends ApiService {
       switchMap((url) =>
         this.http.put(url, file, {
           headers: {
-            // eslint-disable-next-line @typescript-eslint/naming-convention
-            'Content-Type': 'text/csv',
+            'Content-Type': file.type,
           },
         }),
       ),
@@ -26,11 +25,11 @@ export class ManageProductsService extends ApiService {
   }
 
   private getPreSignedUrl(fileName: string): Observable<string> {
-    const url = this.getUrl('import', 'import');
+    const url = `https://0ydjp4725f.execute-api.us-east-1.amazonaws.com/prod/import`;
 
     return this.http.get<string>(url, {
       params: {
-        name: fileName,
+        fileName: fileName,
       },
     });
   }
