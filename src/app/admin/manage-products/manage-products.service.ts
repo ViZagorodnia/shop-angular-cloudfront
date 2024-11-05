@@ -25,11 +25,11 @@ export class ManageProductsService extends ApiService {
   }
 
   private getPreSignedUrl(fileName: string): Observable<string> {
-    const url = `https://0ydjp4725f.execute-api.us-east-1.amazonaws.com/prod/import`;
+    const url = this.getUrl('import', 'import');
 
     return this.http.get<string>(url, {
       params: {
-        fileName: fileName,
+        name: fileName,
       },
     });
   }
