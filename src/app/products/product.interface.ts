@@ -2,7 +2,7 @@ export interface Product {
   /** Available count */
   count: number;
   description: string;
-  productId: string;
+  id: string;
   price: number;
   title: string;
   img: string;

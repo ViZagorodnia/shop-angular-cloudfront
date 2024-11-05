@@ -57,7 +57,7 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 export class EditProductComponent implements OnInit {
   #destroyRef = inject(DestroyRef);
 
-  productId = input<string>();
+  id = input<string>();
 
   form = this.fb.group({
     title: ['', Validators.required],
@@ -95,15 +95,15 @@ export class EditProductComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    const productId = this.productId();
+    const id = this.id();
 
-    if (!productId) {
+    if (!id) {
       this.loaded.set(true);
       return;
     }
 
     this.productsService
-      .getProductById(productId)
+      .getProductById(id)
       .pipe(
         finalize(() => this.loaded.set(true)),
         filter(Boolean),
@@ -121,10 +121,10 @@ export class EditProductComponent implements OnInit {
       return;
     }
 
-    const productId = this.productId();
+    const id = this.id();
 
-    const observable = productId
-      ? this.productsService.editProduct(productId, product)
+    const observable = id
+      ? this.productsService.editProduct(id, product)
       : this.productsService.createNewProduct(product);
 
     this.requestInProgress = true;
@@ -136,7 +136,7 @@ export class EditProductComponent implements OnInit {
         console.warn(error);
         this.requestInProgress = false;
         this.notificationService.showError(
-          `Failed to ${this.productId() ? 'edit' : 'create'} product`,
+          `Failed to ${this.id() ? 'edit' : 'create'} product`,
         );
       },
     });

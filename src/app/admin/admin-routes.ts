@@ -22,7 +22,7 @@ export default [
         component: EditProductComponent,
       },
       {
-        path: 'products/:productId',
+        path: 'products/:id',
         component: EditProductComponent,
       },
     ],

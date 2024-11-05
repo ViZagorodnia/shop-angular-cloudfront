@@ -21,8 +21,8 @@ export class OrderSummaryComponent {
   showControls = input.required<boolean>();
   totalPrice = input.required<number>();
 
-  /** Add productId */
+  /** Add id */
   add = output<string>();
-  /** Remove productId */
+  /** Remove id */
   remove = output<string>();
 }
