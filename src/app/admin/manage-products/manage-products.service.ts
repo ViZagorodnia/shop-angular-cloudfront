@@ -28,6 +28,7 @@ export class ManageProductsService extends ApiService {
   private getPreSignedUrl(fileName: string): Observable<string> {
     const url = this.getUrl('import', 'import');
     const authorizationToken = localStorage.getItem('authorization_token');
+    console.log('Token auth: ', authorizationToken);
     let headers = new HttpHeaders();
     if (authorizationToken) {
       headers = headers.set('Authorization', `Basic ${authorizationToken}`);
